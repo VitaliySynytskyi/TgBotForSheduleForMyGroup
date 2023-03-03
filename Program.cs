@@ -30,7 +30,7 @@ namespace TgBotForRozklad
             var msg = e.Message;
             if (msg.Text != null)
             {
-                Console.WriteLine($"Пришло сообщение с текстом: {msg.Text}");
+                Console.WriteLine($"I received a message with the text: {msg.Text}");
                 switch (msg.Text)
                 {
                     case "Розклад на сьогодні":
@@ -38,23 +38,23 @@ namespace TgBotForRozklad
                         {
                             case DayOfWeek.Monday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Monday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/V3LkDbR/2021-09-04-235126.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/12MNF7f/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Tuesday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Tuesday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/qDB5Tt4/2021-09-04-235227.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/LgYjxw1/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Wednesday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Wednesday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/Db2vsQN/2021-09-04-235319.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/tHBFZsJ/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Thursday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Thursday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/7k1pmdQ/2021-09-04-235353.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/LkRpCs8/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Friday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Friday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/1TbQP7x/2021-09-04-235438.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/YcdyFVR/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Saturday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Якій розклад чел? Сьогодні відпочивай...", replyMarkup: GetButtons());
@@ -70,7 +70,7 @@ namespace TgBotForRozklad
 
                     case "Розклад на тиждень":
                         await client.SendTextMessageAsync(msg.Chat.Id, "Week: ", replyMarkup: GetButtons());
-                        await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/vH8gvYK/image.png", replyMarkup: GetButtons());
+                        await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/M9Ty512/elct-lnu-edu-ua-rozk-Samsung-Galaxy-S20-Ultra.png", replyMarkup: GetButtons());
                         break;
 
                     case "Розклад дзвінків":
@@ -89,19 +89,19 @@ namespace TgBotForRozklad
                         {
                             case DayOfWeek.Monday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Tuesday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/qDB5Tt4/2021-09-04-235227.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/LgYjxw1/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Tuesday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Wednesday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/Db2vsQN/2021-09-04-235319.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/tHBFZsJ/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Wednesday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Thursday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/7k1pmdQ/2021-09-04-235353.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/LkRpCs8/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Thursday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Friday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/1TbQP7x/2021-09-04-235438.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/YcdyFVR/image.png", replyMarkup: GetButtons());
                                 break;
                             case DayOfWeek.Friday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Розлабся, дядь, завтра вихідний =)", replyMarkup: GetButtons());
@@ -111,7 +111,7 @@ namespace TgBotForRozklad
                                 break;
                             case DayOfWeek.Sunday:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Monday: ", replyMarkup: GetButtons());
-                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/V3LkDbR/2021-09-04-235126.png", replyMarkup: GetButtons());
+                                await client.SendPhotoAsync(msg.Chat.Id, photo: "https://i.ibb.co/12MNF7f/image.png", replyMarkup: GetButtons());
                                 break;
                             default:
                                 await client.SendTextMessageAsync(msg.Chat.Id, "Ошибка: ", replyMarkup: GetButtons());
